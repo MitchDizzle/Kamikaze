@@ -47,6 +47,7 @@ public void OnPluginStart() {
     cTouchDistance = CreateConVar("sm_kamikaze_touch_distance", "100.0", "");
     cFriendlyFire = CreateConVar("sm_kamikaze_friendlyfire", "0", "");
     AutoExecConfig(true, "Kamikaze");
+    CreateConVar("sm_kamikaze_version", KAMIKAZE_VERSION, "Kamikaze Version", FCVAR_SPONLY|FCVAR_NOTIFY|FCVAR_DONTRECORD);
     
     //Prevent suicide 1-800-273-8255
     AddCommandListener(Command_Suicide, "kill");
