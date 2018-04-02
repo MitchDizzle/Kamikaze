@@ -37,9 +37,9 @@ public void OnPluginStart() {
     HookEvent("player_team", Event_Team, EventHookMode_Pre);
     HookEvent("post_inventory_application", Event_Inventory);
 
-    cExplodeDelay = CreateConVar("sm_kamikaze_", "5.0", "The delay before a player can explode, to prevent premature explosions.");
-    cExplosionOffset = CreateConVar("sm_kamikaze_", "42.0", "The Z offset of the explosion");
-    cWeirdAnimation = CreateConVar("sm_kamikaze_", "1", "0 - Makes the animation more of a bat, 1 - T-Pose animation with floppy legs");
+    cExplodeDelay = CreateConVar("sm_kamikaze_explode_delay", "5.0", "The delay before a player can explode, to prevent premature explosions.");
+    cExplosionOffset = CreateConVar("sm_kamikaze_explode_offset", "42.0", "The Z offset of the explosion");
+    cWeirdAnimation = CreateConVar("sm_kamikaze_weirdanim", "1", "0 - Makes the animation more of a bat, 1 - T-Pose animation with floppy legs");
     cSuicide = CreateConVar("sm_kamikaze_suicide", "1", "0 - Do not self destruct, 1 - Explode on suicide, 2 - Prevent Suicide");
     cSuicideDamage = CreateConVar("sm_kamikaze_suicide_damage", "500.0", "");
     cSuicideDistance = CreateConVar("sm_kamikaze_suicide_distance", "100.0", "");
