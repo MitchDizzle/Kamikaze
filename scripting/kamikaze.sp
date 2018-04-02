@@ -41,11 +41,11 @@ public void OnPluginStart() {
     cExplosionOffset = CreateConVar("sm_kamikaze_explode_offset", "42.0", "The Z offset of the explosion");
     cWeirdAnimation = CreateConVar("sm_kamikaze_weirdanim", "1", "0 - Makes the animation more of a bat, 1 - T-Pose animation with floppy legs");
     cSuicide = CreateConVar("sm_kamikaze_suicide", "1", "0 - Do not self destruct, 1 - Explode on suicide, 2 - Prevent Suicide");
-    cSuicideDamage = CreateConVar("sm_kamikaze_suicide_damage", "500.0", "");
-    cSuicideDistance = CreateConVar("sm_kamikaze_suicide_distance", "100.0", "");
-    cTouchDamage = CreateConVar("sm_kamikaze_touch_damage", "500.0", "");
-    cTouchDistance = CreateConVar("sm_kamikaze_touch_distance", "100.0", "");
-    cFriendlyFire = CreateConVar("sm_kamikaze_friendlyfire", "0", "");
+    cSuicideDamage = CreateConVar("sm_kamikaze_suicide_damage", "500.0", "Damage of explosion on suicide.");
+    cSuicideDistance = CreateConVar("sm_kamikaze_suicide_distance", "100.0", "Distance of explosion on suicide.");
+    cTouchDamage = CreateConVar("sm_kamikaze_touch_damage", "500.0", "Damage of explosion on touch.");
+    cTouchDistance = CreateConVar("sm_kamikaze_touch_distance", "100.0", "Distance of explosion on touch.");
+    cFriendlyFire = CreateConVar("sm_kamikaze_friendlyfire", "0", "Explosions hurt and kill players (This counts as score points)");
     AutoExecConfig(true, "Kamikaze");
     CreateConVar("sm_kamikaze_version", KAMIKAZE_VERSION, "Kamikaze Version", FCVAR_SPONLY|FCVAR_NOTIFY|FCVAR_DONTRECORD);
     
